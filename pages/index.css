@@ -1,0 +1,72 @@
+.page {
+	background-color: #2a2c2f;
+	font-family: "Inter", sans-serif;
+}
+.page__block {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.header {
+	box-sizing: border-box;
+	overflow: auto;
+	/* Добавил для схлопывающихся отступов */
+}
+.header__container {
+	max-width: calc(100% - 96px);
+	margin: 28px auto 56px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header__logo {
+	width: 176px;
+	height: 52px;
+}
+.header__logo-img {
+	max-width: 100%;
+	object-fit: cover;
+	height: 52px;
+}
+.header__items {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+}
+.header__item:not(:last-child) {
+	margin: 0px 18px 0px 0px;
+}
+.header__lang-link {
+	font-size: 24px;
+	line-height: 28px;
+	color: #ffffff;
+	text-decoration: none;
+}
+.header__lang-link_active {
+	text-decoration: underline;
+}
+@media screen and (max-width: 1024px) {
+	.header__container {
+		margin: 28px auto 48px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.header__container {
+		max-width: calc(100% - 48px);
+	}
+}
+@media screen and (max-width: 425px) {
+	.header__container {
+		max-width: calc(100% - 32px);
+		margin: 16px auto 48px;
+	}
+	.header__logo-img {
+		width: 142px;
+		height: 42px;
+	}
+	.header__lang-link {
+		font-size: 18px;
+		line-height: 20px;
+	}
+}
