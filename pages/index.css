@@ -8,12 +8,10 @@
 }
 .header {
 	box-sizing: border-box;
-	padding: 28px 0 56px;
+	padding: 28px 0 0;
 }
 .page__container {
 	max-width: calc(100% - 96px);
-	/* margin: 28px auto 56px; */
-	/* padding: 28px 0 56px; */
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
@@ -49,7 +47,7 @@
 }
 @media screen and (max-width: 1024px) {
 	.header {
-		padding: 28px 0 48px;
+		padding: 28px 0 0;
 	}
 }
 @media screen and (max-width: 768px) {
@@ -59,7 +57,7 @@
 }
 @media screen and (max-width: 425px) {
 	.header {
-		padding: 16px 0 48px;
+		padding: 16px 0 0;
 	}
 	.page__container {
 		max-width: calc(100% - 32px);
@@ -76,6 +74,7 @@
 /* lead */
 .lead {
 	box-sizing: border-box;
+	padding: 56px 0px 0px 0px;
 }
 .lead__container {
 	max-width: calc(100% - 296px);
@@ -100,6 +99,7 @@
 }
 .lead__img {
 	max-width: 100%;
+	object-fit: cover;
 	margin: 0px 0px 8px 0px;
 }
 .lead__caption {
@@ -111,6 +111,9 @@
 	margin: 0px 0px 0px 0px;
 }
 @media screen and (max-width: 1024px) {
+	.lead {
+		padding: 48px 0px 0px 0px;
+	}
 	.lead__container {
 		max-width: calc(100% - 96px);
 		margin: 0 auto;
@@ -150,6 +153,82 @@
 		font-size: 16px;
 		line-height: 20px;
 		margin: 0 auto 40px;
+	}
+	.lead__caption {
+		max-width: calc(100% - 32px);
+		margin: 0 auto;
+	}
+}
+/* intro */
+.intro {
+	box-sizing: border-box;
+	padding: 92px 0px 0px 0px;
+}
+.intro__container {
+	max-width: calc(100% - 296px);
+	margin: 0 auto;
+}
+.intro__block {
+	max-width: 690px;
+}
+.intro__title {
+	font-weight: 900;
+	font-size: 54px;
+	line-height: 58px;
+	color: #ffffff;
+	margin: 0px 0px 40px 0px;
+}
+.intro__text {
+	margin: 0px 0px 33px 0px;
+	font-size: 16px;
+	line-height: 26px;
+	color: #ffffff;
+}
+.intro__list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.intro__item-list {
+	font-size: 12px;
+	line-height: 18px;
+	color: #ffffff;
+}
+.intro__title-list {
+	font-weight: bold;
+}
+@media screen and (max-width: 1024px) {
+	.intro__container {
+		max-width: calc(100% - 96px);
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 768px) {
+	.intro {
+		padding: 88px 0px 0px 0px;
+	}
+	.intro__container {
+		max-width: calc(100% - 48px);
+		margin: 0 auto;
+	}
+	.intro__block {
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 425px) {
+	.intro {
+		padding: 64px 0px 0px 0px;
+	}
+	.intro__container {
+		max-width: calc(100% - 32px);
+	}
+	.intro__title {
+		font-size: 32px;
+		line-height: 35px;
+	}
+	.intro__text {
+		font-size: 16px;
+		line-height: 26px;
 	}
 	.lead__caption {
 		max-width: calc(100% - 32px);
