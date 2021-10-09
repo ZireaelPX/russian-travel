@@ -1,13 +1,13 @@
-.footer {
-	padding: 92px 0px 24px 0px;
+.photo-grid {
+	padding: 92px 0px 0px 0px;
 }
 @media screen and (max-width: 768px) {
-	.footer {
+	.photo-grid {
 		padding: 88px 0px 0px 0px;
 	}
 }
 @media screen and (max-width: 425px) {
-	.footer {
-		padding: 64px 0px 16px 0px;
+	.photo-grid {
+		padding: 64px 0px 0px 0px;
 	}
 }
