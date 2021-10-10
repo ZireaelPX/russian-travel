@@ -1,7 +1,4 @@
 .cover__block {
-	position: absolute;
-	top: 50%;
-	text-align: center;
-	transform: translate(0, -50%);
+	position: relative;
 	z-index: 10;
 }
