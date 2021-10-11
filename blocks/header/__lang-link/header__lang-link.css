@@ -3,6 +3,10 @@
 	line-height: 28px;
 	color: #ffffff;
 	text-decoration: none;
+	transition: opacity 0.3s ease 0s;
+}
+.header__lang-link:hover {
+	opacity: 0.8;
 }
 @media screen and (max-width: 425px) {
 	.header__lang-link {

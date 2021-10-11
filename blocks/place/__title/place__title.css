@@ -23,16 +23,14 @@
 	.place__title {
 		max-width: 100%;
 		margin: 0 24px;
-		font-weight: 900;
 		font-size: 7.05vw;
 		line-height: 7.45vw;
-		color: #ffffff;
 	}
 }
 @media screen and (max-width: 425px) {
 	.place__title {
-		margin: 0 16px;
 		font-size: 32px;
 		line-height: 35px;
+		margin: 0 16px;
 	}
 }
